@@ -17,7 +17,7 @@ if valik == "1":
         telefon = input("Sisesta telefon: ")  # запрашиваем телефон
         email = input("Sisesta e-post: ")  # запрашиваем email
         lisa_kontakt(nimi, telefon, email)  # добавляем контакт
-        print("✅ Kontakt lisatud!")
+        print("Kontakt lisatud!")
 
 elif valik == "2":
         kuva_kontaktid()  # выводим все контакты
@@ -29,12 +29,12 @@ elif valik == "3":
             for k in tulemused:
                 print(f"{k['nimi']} | {k['telefon']} | {k['email']}")  # выводим найденные
         else:
-            print("❌ Kontakti ei leitud.")  # если не найдено
+            print("Kontakti ei leitud.")  # если не найдено
 
 elif valik == "4":
         nimi = input("Sisesta kustutatava nimi: ")  # запрашиваем имя для удаления
         kustuta_kontakt(nimi)
-        print("🗑️ Kontakt kustutatud!")
+        print("Kontakt kustutatud!")
 
 elif valik == "5":
         vana_nimi = input("Sisesta kontakti vana nimi: ")  # указываем, кого редактировать
@@ -42,7 +42,7 @@ elif valik == "5":
         uus_telefon = input("Uus telefon: ")  # новый телефон
         uus_email = input("Uus e-post: ")  # новый email
         muuda_kontakti(vana_nimi, uus_nimi, uus_telefon, uus_email)
-        print("✏️ Kontakt muudetud!")
+        print("Kontakt muudetud!")
 
 elif valik == "6":
         kriteerium = input("Sorteeri mille järgi (nimi / telefon / email): ").lower()
@@ -51,10 +51,10 @@ elif valik == "6":
             print(f"{k['nimi']} | {k['telefon']} | {k['email']}")  # выводим отсортированный список
 
 elif valik == "0":
-        print("👋 Head aega!")
+        print("Head aega!")
         # выходим из цикла и завершаем программу
 
 else:
-        print("⚠️ Vale valik, proovi uuesti!")  # обработка некорректного ввода
+        print("Vale valik, proovi uuesti!")  # обработка некорректного ввода
 
 
